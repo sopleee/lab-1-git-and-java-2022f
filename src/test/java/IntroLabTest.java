@@ -11,17 +11,26 @@ import static org.junit.Assert.*;
 public class IntroLabTest {
     @Before
     public void setUp() {
+
     }
 
     @After
     public void tearDown() {
     }
 
-    @Test(timeout = 10)
+    @Test(timeout = 100)
     public void testExampleStudent() {
         String expected = "Hello! My name is Stu Dent! " +
                 "I like cats more than dogs! Welcome to CSC207!";
         String actual = IntroLab.exampleStudent();
+        assertEquals(expected, actual);
+    }
+
+    @Test(timeout = 100)
+    public void testleesop10() {
+        String expected = "Hiya! My name is Codi! " +
+                "I like cats more than dogs! fish are kool too";
+        String actual = IntroLab.leesop10();
         assertEquals(expected, actual);
     }
 
